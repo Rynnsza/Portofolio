@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Belajar JavaScript Untuk Pemula</title>
+    <!-- Tailwin Config -->
+    <link href="../css/tailwind.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-100">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <!-- Header -->
+    <header class="mx-auto bg-white shadow-lg rounded-lg" id="top">
+        <div class="px-6 py-8 container mx-auto">
+            <div class="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Blog Belajar React</h1>
+                    <p class="mt-2 text-gray-500 text-lg md:text-xl font-semibold">Cara Cepat Belajar React untuk
+                        Pemula</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="https://react.dev/">
+                        <button
+                            class="inline-flex items-center gap-2 rounded border border-gray-300 bg-white px-5 py-3 text-gray-700 hover:bg-gray-100 hover:shadow-md transition focus:outline-none focus:ring">
+                            <span class="text-sm font-medium">View React Js Docs</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </button>
+                    </a>
+                    <button id="backButton"
+                        class="rounded bg-indigo-600 px-5 py-3 text-sm font-medium text-white shadow-lg hover:bg-indigo-700 transition focus:outline-none focus:ring">
+                        Kembali
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container mx-auto mt-8 px-6">
+            <!-- Blog Section -->
+            <section class="bg-white p-6 shadow-md rounded-lg">
+                <h2 class="text-2xl text-indigo-600 font-semibold">Belajar Fundamental JS</h2>
+                <img src="../img/blog/blog react/react.png" alt="JavaScript Basics"
+                    class="mt-4 w-full h-64 lg:h-[50rem] rounded-lg shadow-md object-cover hover:opacity-90 transition cursor-pointer">
+                <p class="mt-4 md:mt-8 lg:mt-10 text-gray-700 leading-relaxed md:pr-32 text-justify">
+                    <span class="pr-6 md:pr-8 lg:pr-10"></span>Sebelum mempelajari React, sangat penting untuk memahami
+                    JavaScript terlebih dahulu. Mengapa? Karena
+                    React adalah sebuah library yang dibangun untuk mempermudah kita dalam menggunakan JavaScript. Jika
+                    kita tidak memahami fundamental JavaScript dengan baik, maka akan sulit untuk mengembangkan website
+                    menggunakan React di masa depan.
+                    Untuk membantu Anda yang masih pemula dalam belajar JavaScript, saya memiliki blog yang membahas
+                    tips belajar JavaScript secara lengkap. Anda dapat mengaksesnya di <span class="text-blue-500"><a
+                            href="../html/blogJs.html">Blog JS</a></span>.
+                </p>
+
+            </section>
+
+            <!-- Additional Sections -->
+            <section class="mt-10 bg-white p-6 shadow-md rounded-lg">
+                <h2 class="text-2xl text-indigo-600 font-semibold">Gunakan Cdn</h2>
+                <img src="../img/blog/blog react/cdn.jpg" alt="Variables"
+                    class="mt-4 w-full h-64 lg:h-[50rem] rounded-lg shadow-md object-cover hover:opacity-90 transition cursor-pointer">
+                <p class="mt-4 md:mt-8 lg:mt-10 text-gray-700 leading-relaxed md:pr-32 text-justify">
+                    <span class="pr-6 md:pr-8 lg:pr-10"></span>Sama seperti Tailwind CSS, React.js juga bisa digunakan
+                    melalui CDN. Saya sangat menyarankan Anda,
+                    terutama jika Anda masih pemula, untuk mencoba menggunakan CDN terlebih dahulu sebelum menginstalnya
+                    langsung ke dalam proyek Anda. Dengan menggunakan CDN, Anda dapat lebih mudah memahami cara kerja
+                    React.js tanpa perlu mengatur lingkungan pengembangan yang rumit. Selain itu, pendekatan ini
+                    memungkinkan Anda untuk bereksperimen dengan lebih cepat dan fokus pada pembelajaran dasar React.js
+                    sebelum melangkah ke tahap instalasi dan konfigurasi yang lebih kompleks.
+                </p>
+
+            </section>
+
+            <section class="mt-10 bg-white p-6 shadow-md rounded-lg">
+                <h2 class="text-2xl text-indigo-600 font-semibold">Fungsi dan Cara Penggunaan React</h2>
+                <img src="../img/blog/blog react/react2.jpg" alt="React Functions"
+                    class="mt-4 w-full h-64 lg:h-[50rem] rounded-lg shadow-md object-cover hover:opacity-90 transition cursor-pointer">
+                <p class="mt-4 md:mt-8 lg:mt-10 text-gray-700 leading-relaxed md:pr-32 text-justify">
+                    <span class="pr-6 md:pr-8 lg:pr-10"></span>Sebelum mempelajari React lebih dalam, penting untuk
+                    memahami alasan mengapa React menjadi pilihan
+                    utama banyak
+                    developer dalam membangun aplikasi web modern. React adalah pustaka JavaScript yang dikembangkan
+                    oleh Facebook,
+                    dirancang untuk mempermudah pembuatan antarmuka pengguna (UI) yang interaktif dan dinamis. Dengan
+                    pendekatan
+                    berbasis komponen, React memungkinkan Anda untuk membangun UI secara modular, membuat kode Anda
+                    lebih terorganisir
+                    dan mudah dikelola.
+                </p>
+            </section>
+
+
+            <section class="mt-10 bg-white p-6 shadow-md rounded-lg">
+                <h2 class="text-2xl text-indigo-600 font-semibold">Belajar Lewat Video</h2>
+                <img src="../img/blog/blog tailwind/vedio.jpg" alt="Learning Through Videos"
+                    class="mt-4 w-full h-64 lg:h-[50rem] rounded-lg shadow-md object-cover hover:opacity-90 transition cursor-pointer">
+                <p class="mt-4 md:mt-8 lg:mt-10 text-gray-700 leading-relaxed md:pr-32 text-justify">
+                    Belajar React melalui video adalah cara yang sangat efektif untuk memahami konsep-konsep pemrograman
+                    dengan cara visual dan interaktif. Dengan tutorial video, Anda dapat melihat langkah demi langkah
+                    implementasi kode, memutar ulang bagian yang sulit dipahami, dan belajar dengan kecepatan yang
+                    sesuai dengan Anda. Saya merekomendasikan kursus dari Sandikan Galih atau Programming Unpas, yang
+                    menawarkan penjelasan jelas dan cocok untuk pemula hingga tingkat lanjutan.
+                </p>
+            </section>
+
+
+
+
+            <section class="mt-10 bg-white p-6 shadow-md rounded-lg">
+                <h2 class="text-2xl text-indigo-600 font-semibold">Praktikkan dengan Proyek Kecil</h2>
+                <img src="../img/blog/blog react/project.jpg" alt="Small Projects"
+                    class="mt-4 w-full h-64 lg:h-[50rem] rounded-lg shadow-md object-cover hover:opacity-90 transition cursor-pointer">
+                <p class="mt-4 md:mt-8 lg:mt-10 text-gray-700 leading-relaxed md:pr-32 text-justify">
+                    <span class="pr-6 md:pr-8 lg:pr-10"></span>Cara terbaik untuk belajar JavaScript adalah dengan
+                    langsung mempraktikkannya. Cobalah untuk membuat
+                    proyek kecil seperti kalkulator atau to-do list.
+                    Proyek ini akan mengajarkan Anda bagaimana menggabungkan konsep-konsep yang telah dipelajari dan
+                    membantu Anda memahami alur pengembangan aplikasi berbasis JavaScript.
+                </p>
+            </section>
+        </div>
+    </main>
+
+   
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-center text-white py-6 mt-12">
+        <p>&copy; 2024 Hidayat Blog Belajar React.Js</p>
+    </footer>
+    <!-- Js Blog -->
+    <script src="../js/blog.js"></script>
+</body>
+
+</html>

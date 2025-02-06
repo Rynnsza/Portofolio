@@ -1,0 +1,916 @@
+<!doctype html>
+<html class="overflow-x-hidden">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portofolio</title>
+  <!-- Icon gambar Browser -->
+  <link rel="icon" href="../img/RYZBE.png" type="image/x-icon">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Tailwin Config -->
+  <link href="../css/tailwind.css" rel="stylesheet">
+  <!-- Link Css -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <style>
+    /* Mengubah bullet pagination */
+    .swiper-pagination-bullet {
+      background-color: #94a3b8;
+      /* Warna bullet saat tidak aktif */
+      opacity: 0.7;
+      transition: background-color 0.3s, transform 0.3s;
+      /* Efek transisi */
+    }
+
+    /* Mengubah bullet pagination yang aktif */
+    .swiper-pagination-bullet-active {
+      background-color: #2563eb;
+      /* Warna bullet yang aktif */
+    }
+  </style>
+</head>
+
+<body class="dark:bg-gray-900 overflow-x-hidden font-sans ">
+  <!-- Navbar -->
+  <header
+    class="h-24 lg:h-28 z-20 flex items-center bg-white bg-opacity-85 dark:bg-gray-900 dark:bg-opacity-85 lg:bg-opacity-85 shadow-lg border-gray-200 fixed top-0 w-full font-[popins]">
+    <nav class="flex items-center justify-between container px-6 mx-auto h-24 z-20">
+      <!-- Logo -->
+      <div class="text-xl lg:text-2xl font-semibold">
+        <h1 class="bg-personal-hover bg-clip-text text-transparent font-bold">RyzZ</h1>
+      </div>
+      <!-- Nav Links and Icon -->
+      <div class="flex items-center gap-6">
+        <div
+          class="nav-links duration-500 z-10 md:z-10 md:static md:flex fixed md:bg-transparent md:dark:bg-transparent bg-white bg-opacity-85
+           dark:bg-gray-900 dark:opacity-85 left-0 top-[-100%] md:w-auto w-full flex-col md:flex-row items-center px-5 ">
+          <ul
+            class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 py-10 md:py-0 text-lg lg:text-xl text-center font-semibold">
+            <li>
+              <a class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white" href="#saya">Tentang
+                Saya</a>
+            </li>
+            <li>
+              <a class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white" href="#skill">Skill
+                Saya</a>
+            </li>
+            <li>
+              <a class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white"
+                href="#project">Project</a>
+            </li>
+            <li>
+              <a class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white"
+                href="#sertifikat">Sertifikat</a>
+            </li>
+            <li>
+              <a class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white" href="#blog">Blog</a>
+            </li>
+            <li>
+              <a class="hover:text-blue-500 dark:hover:text-blue-500 text-black dark:text-white"
+                href="#kontak">Kontak</a>
+            </li>
+            <li class="flex justify-items-center justify-center">
+              <label class="inline-flex items-center cursor-pointer">
+                <!-- Input harus memiliki event -->
+                <input type="checkbox" class="sr-only peer" id="toggle">
+                <div class="relative w-11 h-6 bg-purple-500 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                    dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                    rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] 
+                    after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 
+                    after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 
+                    peer-checked:bg-blue-600">
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <!-- Menu Icon -->
+        <ion-icon onclick="onToggleMenu(this)" name="menu"
+          class="text-3xl cursor-pointer text-black dark:text-white md:hidden"></ion-icon>
+      </div>
+    </nav>
+  </header>
+  <!-- Isi -->
+  <main class="container mx-auto pt-16 md:pt-20 " id="kenal">
+    <!-- Perkenalan -->
+    <section class="pt-12 lg:pt-20 px-2 ">
+      <div class="flex flex-wrap mx-auto">
+        <article class="w-full self-center px-4 lg:w-1/2 " data-aos="fade-right" data-aos-duration="1000">
+          <h1
+            class="text-base sm:text-lg md:text-xl lg:text-2xl  bg-clip-text text-transparent font-bold bg-personal dark:bg-personal-hover">
+            Halo! semua,
+            saya
+          </h1>
+          <span class="text-slate-900 font-bold block text-3xl md:text-4xl lg:text-5xl lg:mb-3 dark:text-white"
+            data-aos="fade-right" data-aos-duration="1000">Ahmad Ambari</span>
+          <h2 class="font-medium text-slate-600 text-lg md:text-xl dark:text-slate-300" data-aos="fade-right"
+            data-aos-duration="1000">Front End Developer | Manajemen Proyek</h2>
+
+          <div class="my-3 text-lg flex gap-3 md:gap-5 lg:text-xl lg:my-4 dark:text-white flex-wrap">
+            <a href="https://github.com/Rynnsza" data-aos="zoom-in" target="_blank" rel="noopener noreferrer"
+              data-aos-duration="600" data-aos-delay="200">
+              <i
+                class="fa-brands fa-github p-4 border-2 rounded-full h-12 w-12 md:h-14 md:w-14 lg:w-16 lg:h-16 flex items-center justify-center border-slate-600 dark:border-slate-300 hover:bg-personal-hover hover:text-white"></i>
+            </a>
+            <a href="https://www.instagram.com/ahmdabri_" data-aos="zoom-in" target="_blank" rel="noopener noreferrer"
+              data-aos-duration="600" data-aos-delay="400">
+              <i
+                class="fa-brands fa-instagram p-4 border-2 rounded-full h-12 w-12 md:h-14 md:w-14 lg:w-16 lg:h-16 flex items-center justify-center border-slate-600 dark:border-slate-300 hover:bg-personal-hover hover:text-white"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ahmad-ambari-1b9bb8287" target="_blank" rel="noopener noreferrer"
+              data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
+              <i
+                class="fa-brands fa-linkedin p-4 border-2 rounded-full h-12 w-12 md:h-14 md:w-14 lg:w-16 lg:h-16 flex items-center justify-center border-slate-600 dark:border-slate-300 hover:bg-personal-hover hover:text-white"></i>
+            </a>
+            <a href="https://www.tiktok.com/@ryndev_" data-aos="zoom-in" target="_blank" rel="noopener noreferrer"
+              data-aos-duration="600" data-aos-delay="800">
+              <i
+                class="fa-brands fa-tiktok p-4 border-2 rounded-full h-12 w-12 md:h-14 md:w-14 lg:w-16 lg:h-16 flex items-center justify-center border-slate-600 dark:border-slate-300 hover:bg-personal-hover hover:text-white"></i>
+            </a>
+            <a href="https://www.youtube.com/@ahmadambari6962" data-aos="zoom-in" target="_blank"
+              rel="noopener noreferrer" data-aos-duration="600" data-aos-delay="1000">
+              <i
+                class="fa-brands fa-youtube p-4 border-2 rounded-full h-12 w-12 md:h-14 md:w-14 lg:w-16 lg:h-16 flex items-center justify-center border-slate-600 dark:border-slate-300 hover:bg-personal-hover hover:text-white"></i>
+            </a>
+          </div>
+          <p class="font-medium md:text-lg text-slate-600 dark:text-slate-300 text-justify" data-aos="fade-up"
+            data-aos-duration="1000">Saya seorang web dev yang fokus di front-end development. Saya suka bikin web yang
+            responsif dan interaktif.</p>
+          <a href="https://wa.me/6281292711935?text=Halo%20Salam%20Kenal%20ya!%20" target="_blank"
+            rel="noopener noreferrer">
+            <button id="myButton2" target="_blank" rel="noopener noreferrer"
+              class="mt-8 bg-personal px-8 py-2 font-medium text-white rounded-full text-base md:text-lg lg:text-xl transition duration-500 hover:bg-personal-hover flex gap-3 items-center"
+              data-aos="zoom-in" data-aos-delay="1200">
+              Hubungi Saya <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </button>
+          </a>
+        </article>
+        <!-- Profil -->
+        <article class="self-end w-full lg:w-1/2 mt-4 lg:mt-0" data-aos="fade-left" data-aos-duration="1000">
+          <div class="mt-10 relative flex justify-center items-center">
+            <!-- Gambar Yae -->
+            <img src="../img/ryzz.jpg" alt="" class="mx-auto max-w-full z-2 h-64 md:h-72 lg:h-80 xl:h-96"
+              data-aos="zoom-in" data-aos-duration="1000">
+            <!-- Gambar hijau (SVG) di belakang -->
+            <span class="absolute inset-0 top-10 md:top-32 flex justify-center items-center -z-10" data-aos="fade-up"
+              data-aos-duration="1000">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-[600px] md:w-[650px] lg:w-[700px]">
+                <!-- Mendefinisikan Gradien -->
+                <defs>
+                  <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#d62976;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#4f5bd5;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <!-- Menggunakan Gradien di Path -->
+                <path fill="url(#grad)"
+                  d="M38.8,-65.1C47.8,-61.9,51.1,-46.7,52.4,-33.8C53.6,-20.9,52.9,-10.5,47.4,-3.2C42,4.2,31.8,8.3,26.5,14.3C21.3,20.2,21,28,17.4,31.2C13.8,34.4,6.9,33,-0.9,34.5C-8.6,36,-17.2,40.3,-19,36.1C-20.8,31.9,-15.9,19.1,-23.2,11.6C-30.6,4.2,-50.3,2.1,-55.5,-3C-60.8,-8.1,-51.5,-16.3,-44.2,-23.8C-36.9,-31.3,-31.5,-38.2,-24.4,-42.5C-17.4,-46.8,-8.7,-48.6,3.1,-53.9C14.9,-59.3,29.7,-68.2,38.8,-65.1Z"
+                  transform="translate(100 100)" />
+              </svg>
+            </span>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Tombol Top -->
+    <a href="#kenal" id="backToTop"
+      class="lg:h-14 lg:w-14 w-12 h-12 rounded-full fixed bottom-14 right-6 md:bottom-20 md:right-14  opacity-0 pointer-events-none transition-opacity duration-300
+    lg:bottom-24 lg:right-20 xl:bottom-28 xl:right-28 z-[9] bg-personal hover:bg-personal-hover p-4 cursor-pointer justify-center flex items-center">
+      <i class="fa-solid fa-arrow-up text-white lg:text-xl"></i>
+    </a>
+    <!-- Tentang Saya -->
+    <section class="pt-20 lg:pt-24" id="saya">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap px-4 mx-4">
+          <!-- Artikel Tentang Saya -->
+          <article class="w-full lg:w-1/2 lg:pr-6" data-aos="fade-right" data-aos-duration="1200"
+            data-aos-easing="ease-out-cubic">
+            <h4
+              class="uppercase font-semibold bg-personal dark:bg-personal-hover bg-clip-text text-transparent text-lg lg:text-xl font-[popins]">
+              Tentang Saya
+            </h4>
+            <ul class="pl-5 md:text-lg mt-2 font-medium text-slate-600 dark:text-slate-300">
+              <li class="flex items-start gap-2 mt-2" data-aos="zoom-in" data-aos-duration="1000">
+                <span class="text-xl">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                </span>
+                <p>
+                  Halo! Saya <span class="font-bold text-teal-500">Ahmad Ambari</span>, seorang
+                  <span class="font-bold">Front-End Developer</span> dan mahasiswa
+                  <span class="font-bold">Teknik Informatika</span> di
+                  <span class="font-bold ">Universitas Nurul Jadid</span> (UNUJA).
+                </p>
+              </li>
+              <li class="flex items-start gap-2 mt-2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <span class="text-xl">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                </span>
+                <p>
+                  Saya memiliki hasrat besar dalam menciptakan pengalaman web yang
+                  <span class="font-bold text-teal-500">interaktif</span>,
+                  <span class="font-bold text-teal-500">modern</span>, dan
+                  <span class="font-bold text-teal-500">responsive</span>.
+                </p>
+              </li>
+            </ul>
+          </article>
+          <!-- Artikel Mari Berteman -->
+          <article class="w-full lg:w-1/2 lg:pl-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300"
+            data-aos-easing="ease-out-cubic">
+            <h4
+              class="uppercase font-semibold bg-personal dark:bg-personal-hover bg-clip-text text-transparent text-lg lg:text-xl mt-16 lg:mt-0 font-[popins]">
+              Mari Berteman
+            </h4>
+            <ul class="pl-5 md:text-lg mt-2 text-slate-600 dark:text-slate-300">
+              <li class="flex items-start gap-2 mt-2" data-aos="zoom-in" data-aos-duration="1000">
+                <span class="text-xl ">
+                  <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </span>
+                <p>
+                  Yuk, ngobrol lebih dekat! Kalau kamu tertarik dengan dunia
+                  <span class="font-bold text-teal-500">web programming</span>, punya ide yang ingin direalisasikan,
+                  atau hanya ingin berbagi cerita soal teknologi.
+                </p>
+              </li>
+              <li class="flex items-start gap-2 mt-2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <span class="text-xl ">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </span>
+                <p>
+                  Aku selalu senang diajak diskusi, jangan ragu untuk menghubungi aku, ya!
+                </p>
+              </li>
+              <li class="flex items-start gap-2 mt-2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                <span class="text-xl ">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </span>
+                <p>
+                  Mari kita saling belajar dan tumbuh bersama di dunia coding.
+                </p>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Skill -->
+    <section class="pt-20 lg:pt-24" id="skill">
+      <div class="container mx-auto p-6">
+        <!-- Header -->
+        <article class="max-w-xl mx-auto text-center mb-16">
+          <h2
+            class="bg-personal dark:bg-personal-hover bg-clip-text text-transparent font-bold text-3xl mb-4 font-[popins]"
+            data-aos="fade-up">
+            Skills Saya
+          </h2>
+          <p class="text-md md:text-lg lg:text-xl text-slate-600 dark:text-slate-300 font-semibold" data-aos="fade-up"
+            data-aos-delay="200">
+            Saya memiliki beberapa skill di bidang pengembangan web. Cek yuk!
+          </p>
+        </article>
+        <!-- Skill Cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- Skill Card JavaScript -->
+          <div
+            class="hover:shadow-2xl shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-4 hover:scale-105 duration-300 cursor-pointer border border-purple-300"
+            data-aos="fade-up" data-aos-delay="300">
+            <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="JavaScript" class="w-16 mx-auto mb-4">
+            <h3 class="text-xl font-bold mb-2 dark:text-white">JavaScript</h3>
+            <p class="text-gray-600 dark:text-slate-300">Medium</p>
+          </div>
+          <!-- Skill Card Tailwind CSS -->
+          <div
+            class="hover:shadow-2xl shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-4 hover:scale-105 duration-300 cursor-pointer border border-purple-300"
+            data-aos="fade-up" data-aos-delay="400">
+            <img src="https://img.icons8.com/color/96/000000/tailwindcss.png" alt="Tailwind CSS"
+              class="w-16 mx-auto mb-4">
+            <h3 class="text-xl font-bold mb-2 dark:text-white">TailwindCss</h3>
+            <p class="text-gray-600 dark:text-slate-300">Expert</p>
+          </div>
+          <!-- Skill Card React -->
+          <div
+            class="hover:shadow-2xl shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-4 hover:scale-105 duration-300 cursor-pointer border border-purple-300"
+            data-aos="fade-up" data-aos-delay="500">
+            <img src="https://img.icons8.com/offices/96/000000/react.png" alt="React" class="w-16 mx-auto mb-4">
+            <h3 class="text-xl font-bold mb-2 dark:text-white">React</h3>
+            <p class="text-gray-600 dark:text-slate-300">Masih pemula
+            </p>
+          </div>
+          <!-- Skill Card PHP -->
+          <div
+            class="hover:shadow-2xl shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-4 hover:scale-105 duration-300 cursor-pointer border border-purple-300"
+            data-aos="fade-up" data-aos-delay="600">
+            <img src="https://img.icons8.com/offices/96/000000/php-logo.png" alt="PHP" class="w-16 mx-auto mb-4">
+            <h3 class="text-xl font-bold mb-2 dark:text-white">PHP</h3>
+            <p class="text-gray-600 dark:text-slate-300">Masih Pemula.</p>
+          </div>
+          <!-- Skill Card Laravel -->
+          <div
+            class="hover:shadow-2xl shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-4 hover:scale-105 duration-300 cursor-pointer border border-purple-300"
+            data-aos="fade-up" data-aos-delay="800">
+            <img src="https://img.icons8.com/fluency/96/laravel.png" alt="Laravel" class="w-16 mx-auto mb-4">
+            <h3 class="text-xl font-bold mb-2 dark:text-white">Laravel</h3>
+            <p class="text-gray-600 dark:text-slate-300">Masih Pemula.</p>
+          </div>
+          <!-- Skill Card Type Script -->
+          <div
+            class="hover:shadow-2xl shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-4 hover:scale-105 duration-300 cursor-pointer border border-purple-300"
+            data-aos="fade-up" data-aos-delay="1000">
+            <img src="https://img.icons8.com/color/96/000000/typescript.png" alt="TypeScript" class="w-16 mx-auto mb-4">
+            <h3 class="text-xl font-bold mb-2 dark:text-white">TypeScript</h3>
+            <p class="text-gray-600 dark:text-slate-300">Medium.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project -->
+    <section class="pt-20 lg:pt-24 px-4" id="project">
+      <div class="container mx-auto">
+        <div class="w-full px-4 ">
+          <article class="max-w-xl mx-auto text-center mb-16">
+            <h2
+              class="font-bold bg-personal dark:bg-personal-hover bg-clip-text text-transparent text-3xl mb-4 font-[popins]"
+              data-aos="fade-up" data-aos-duration="1000">
+              Project
+            </h2>
+            <p class="text-md md:text-lg lg:text-xl text-slate-600 dark:text-slate-300 font-semibold" data-aos="fade-up"
+              data-aos-duration="1000" data-aos-delay="200">
+              Saya telah mengerjakan beberapa project menarik di bidang pengembangan web, Cek yuk!
+            </p>
+          </article>
+        </div>
+        <!-- inti 1 -->
+        <div class="w-full px-4 flex flex-wrap swiper mySwiper">
+          <!-- inti 2 -->
+          <div class="swiper-wrapper">
+            <!-- Project 1 -->
+            <div class="mb-12 p-4 md:w-1/2 xl:w-1/3 swiper-slide">
+              <div class="" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="300"
+                data-aos-easing="ease-out-cubic">
+                <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="../img/project/magang.jpg" alt=""
+                    class="w-full object-cover md:h-72 h-60 overflow-hidden transition-transform transform duration-300 hover:scale-110 cursor-pointer">
+                </div>
+                <h3 class="font-semibold text-black dark:text-slate-200 text-xl mt-5 mb-5">
+                  SI-MAP
+                </h3>
+                <p id="lineSatu"
+                  class="font-medium text-base text-slate-600 dark:text-slate-300 leading-relaxed text-justify line-clamp-3">
+                  <span class="pr-4 md:pr-6 lg:pr-8"></span> Ini dia project SI-MAP atau Sistem Informasi
+                  Manajemen Arsip PBJT saya bareng 2 teman seperjuangan!
+                  Di
+                  project ini, saya ambil bagian sebagai <span class="rounded font-bold dark:text-slate-200">Front-End
+                    Developer</span>,
+                  ngulik tampilan sistem pegarsipan pajak PBJT biar makin kece.
+                  Kalau mau intip hasil kerjaan kami, cek aja <span
+                    class="text-teal-500 cursor-pointer font-semibold"><a target="_blank" rel="noopener noreferrer"
+                      href="https://github.com/MuhammadFikriiii/sistem-informasi-manajemen-arsip">link-nya!</a></span>
+                  🎨💻
+                </p>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="mb-12 p-4 md:w-1/2 xl:w-1/3 swiper-slide">
+              <div class="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400"
+                data-aos-easing="ease-in-out">
+                <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="../img/project/pbl.jpg" alt=""
+                    class="w-full object-cover md:h-72 h-60 overflow-hidden transition-transform transform duration-300 hover:scale-110 cursor-pointer">
+                </div>
+                <h3 class="font-semibold text-black dark:text-slate-200 text-xl mt-5 mb-5">SI-Kaligrafi</h3>
+                <p id="lineDua"
+                  class="font-medium text-base text-slate-600 dark:text-slate-300 text-justify line-clamp-3">
+                  <span class="pr-4 md:pr-6 lg:pr-8"></span> Saya bareng 4 teman bikin project ini lewat program PBL
+                  (Project Best Learning) luar kampus.
+                  Di sini saya ambil bagian sebagai <span class="rounded font-bold dark:text-slate-200">Project
+                    Manager</span> sekaligus
+                  <span class="rounded font-bold dark:text-slate-200">Front-End Developer</span>. Meski banyak drama,
+                  akhirnya sistem kaligrafi ini kelar juga!
+                  Penasaran? Cek <span class="text-teal-500 cursor-pointer font-semibold"><a target="_blank"
+                      rel="noopener noreferrer" href="https://github.com/Huseinaby/si-kaligrafi">link-nya!</a></span>
+                  💪🎨
+                </p>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="mb-12 p-4 md:w-1/2 xl:w-1/3 swiper-slide">
+              <div class="" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400"
+                data-aos-easing="ease-in-out">
+                <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="../img/project/sistem_antrian.jpg" alt=""
+                    class="w-full object-cover md:h-72 h-60 overflow-hidden transition-transform transform duration-300 hover:scale-110 cursor-pointer">
+                </div>
+                <h3 class="font-semibold text-black dark:text-slate-200 text-xl mt-5 mb-5">Sistem Antrian Puskesmas</h3>
+                <p id="lineTiga"
+                  class="font-medium text-base text-slate-600 dark:text-slate-300 text-justify line-clamp-3">
+                  <span class="pr-4 md:pr-6 lg:pr-8"></span> Saya bareng tim komunitas dev berhasil mengembangkan
+                  aplikasi sistem
+                  antrian ini
+                  untuk mempermudah proses pendaftaran dan manajemen antrian di puskesmas.
+                  Di sini, saya berperan sebagai <span class="rounded font-bold dark:text-slate-200">Front End
+                    Developer</span>, fokus
+                  pada membuat tampilan dan optimasi antarmuka.
+                  Penasaran sama aplikasinya? Cek <span class="text-teal-500 cursor-pointer font-semibold"><a
+                      target="_blank" rel="noopener noreferrer"
+                      href="https://github.com/Hidayat3118/sistem-antrian">link-nya!</a></span> 🩺🚀
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <!-- Navigasi -->
+          <!-- <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div> -->
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Sertifikat -->
+    <section class="pt-20 lg:pt-24" id="sertifikat">
+      <div class="container mx-auto">
+        <div class="w-full px-4">
+          <article class="max-w-xl mx-auto text-center mb-16" data-aos="fade-up" data-aos-duration="1000">
+            <h2
+              class="font-bold bg-personal dark:bg-personal-hover bg-clip-text text-transparent text-3xl mb-4 font-[popins]">
+              Sertifikat
+            </h2>
+            <p class="text-base md:text-lg lg:text-xl text-slate-600 font-semibold dark:text-slate-300"
+              data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              Saya mendapatkan beberapa sertifikat dicoding bidang FE dan BE Developer,meskipun materinya dasar ilmunya
+              sangat
+              bermanfaat tunggu apalagi Cek Kuy!
+            </p>
+          </article>
+        </div>
+        <article class="px-4 flex flex-wrap justify-center">
+          <!-- inti 1 -->
+          <div class="swiper mySwiper">
+            <!-- Inti 2 -->
+            <div class="swiper-wrapper">
+              <!-- Sertifikat 1 -->
+              <div class="swiper-slide mb-12 p-4 md:w-1/2 xl:w-1/3 w-full">
+                <div class="" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="300">
+                  <div
+                    class="rounded-md shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+                    <img src="../img/Sertifikat/tiga.jpg" alt="Sertifikat 1"
+                      class="w-full transition-transform transform duration-300 hover:scale-105 cursor-pointer">
+                  </div>
+                  <h3
+                    class="font-semibold text-black dark:text-slate-300 text-xl mt-5 mb-4 cursor-pointer transition-colors duration-300">
+                    Cloud Practitioner Essentials (Aws Cloud)</h3>
+                  <a href="../pdf/Tiga.pdf" target="_blank">
+                    <p class="font-medium text-base text-teal-500 hover:text-teal-600 transition-colors duration-300">
+                      Lihat Detail
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <!-- Sertifikat 2 -->
+              <div class="mb-12 p-4 md:w-1/2 xl:w-1/3 w-full swiper-slide">
+                <div class="" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="400">
+                  <div
+                    class="rounded-md shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+                    <img src="../img/Sertifikat/dua.jpg" alt="Sertifikat 2"
+                      class="w-full transition-transform transform duration-300 hover:scale-105 cursor-pointer">
+                  </div>
+                  <h3
+                    class="font-semibold text-black dark:text-slate-300 text-xl mt-5 mb-4 cursor-pointer transition-colors duration-300">
+                    Belajar Dasar Pemrograman Javascript</h3>
+                  <a href="../pdf/dua.pdf" target="_blank">
+                    <p class="font-medium text-base text-teal-500 hover:text-teal-600 transition-colors duration-300">
+                      Lihat Detail
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <!-- Sertifikat 3 -->
+              <div class="mb-12 p-4 md:w-1/2 xl:w-1/3 w-full swiper-slide">
+                <div class="" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="500">
+                  <div
+                    class="rounded-md shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+                    <img src="../img/Sertifikat/satu.jpg" alt="Sertifikat 3"
+                      class="w-full transition-transform transform duration-300 hover:scale-105 cursor-pointer">
+                  </div>
+                  <h3
+                    class="font-semibold text-black dark:text-slate-300 text-xl mt-5 mb-4 cursor-pointer transition-colors duration-300">
+                    Belajar Dasar Pemrograman Web</h3>
+                  <a href="../pdf/satu.pdf" target="_blank">
+                    <p class="font-medium text-base text-teal-500 hover:text-teal-600 transition-colors duration-300">
+                      Lihat Detail
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <!-- Navigasi -->
+            <!-- <div class="swiper-button-next"></div>
+             <div class="swiper-button-prev"></div> -->
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Blog -->
+    <section class="pt-20 lg:pt-24" id="blog">
+      <div class="container mx-auto">
+        <div class="px-4">
+          <div class="w-full bg-red">
+            <article class="max-w-xl mx-auto text-center mb-16">
+              <h4
+                class="font-semibold text-3xl bg-personal dark:bg-personal-hover bg-clip-text text-transparent mb-4 font-[popins]"
+                data-aos="fade-up" data-aos-duration="1000">Blog</h4>
+              <p class="font-semibold text-md text-slate-600 dark:text-slate-300 text-base md:text-lg lg:text-xl"
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                Selamat datang di halaman blog saya, saya ada membuat beberapa blog kuy liat!
+              </p>
+            </article>
+          </div>
+          <!-- inti 1 -->
+          <article class="flex flex-wrap mx-auto swiper mySwiper">
+            <!-- inti 2 -->
+            <div class="swiper-wrapper">
+              <!-- blog 1 -->
+              <div class="swiper-slide w-full px-4 md:w-1/2 xl:w-1/3">
+                <div class="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                  <div
+                    class="bg-gray-100 border border-gray-300 dark:border-slate-500 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg mb-10 hover:shadow-2xl duration-300">
+                    <img src="../img/blog/blog tailwind/tailwind.jpg" alt=""
+                      class="w-full object-cover md:h-60 h-56 transition-transform transform duration-300 hover:scale-110 cursor-pointer">
+                    <div class="py-8 px-6">
+                      <h3 class="mb-3 md:mb-4 lg:mb-5 font-semibold text-xl text-black dark:text-white line-clamp-1">
+                        Cara Cepat Belajar TailwindCss Untuk Pemula
+                      </h3>
+                      <p class="text-slate-600 mb-2 dark:text-slate-300 text-justify line-clamp-3"> <span
+                          class="pr-4 md:pr-6 lg:pr-8"></span>Sebelum praktik
+                        menggunakan Tailwind
+                        CSS, penting untuk memahami konsep utility-class. Pengalaman saya menunjukkan bahwa tanpa
+                        pemahaman
+                        ini, belajar Tailwind CSS bisa menjadi sulit.</p>
+                      <div class="flex gap-3 mt-2 items-center text-teal-500">
+                        <a href="../html/blogTailwind.html" class="text-teal-500 hover:text-teal-600">Baca
+                          selengkapnya</a>
+                        <a href="../html/blogReact.html">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- blog 2 -->
+              <div class="swiper-slide w-full px-4 md:w-1/2 xl:w-1/3">
+                <div class="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                  <div
+                    class="bg-gray-100 border border-gray-300 dark:border-slate-500 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg mb-10 hover:shadow-2xl duration-300">
+                    <img src="../img/blog/blog js/js.jpg" alt=""
+                      class="w-full object-cover md:h-60 h-56 transition-transform transform duration-300 hover:scale-110 cursor-pointer">
+                    <div class="py-8 px-6">
+                      <h3 class="mb-3 md:mb-4 lg:mb-5 font-semibold text-xl text-black dark:text-white line-clamp-1 ">
+                        Cara Cepat Belajar JavaScript Untuk Pemula
+                      </h3>
+                      <p class="text-slate-600 dark:text-slate-300 mb-2 text-justify line-clamp-3"> <span
+                          class="pr-4 md:pr-6 lg:pr-8"></span>JavaScript adalah
+                        bahasa
+                        pemrograman
+                        yang digunakan untuk membuat halaman web lebih interaktif. Untuk mulai belajar, Anda perlu
+                        mengerti
+                        beberapa konsep dasar seperti variabel.</p>
+                      <div class="flex gap-3 mt-2 items-center text-teal-500">
+                        <a href="../html/blogJs.html" class="text-teal-500 hover:text-teal-600">Baca selengkapnya</a>
+                        <a href="../html/blogReact.html">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- blog 3 -->
+              <div class="swiper-slide w-full px-4 md:w-1/2 xl:w-1/3">
+                <div class="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                  <div
+                    class="bg-gray-100 border border-gray-300 dark:border-slate-500 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg mb-10 hover:shadow-2xl duration-300">
+                    <img src="../img/blog/blog react/react.jpg" alt=""
+                      class="w-full object-cover md:h-60 h-56 transition-transform transform duration-300 hover:scale-110 cursor-pointer">
+                    <div class="py-8 px-6">
+                      <h3 class="mb-3 md:mb-4 lg:mb-5 font-semibold text-xl text-black dark:text-white line-clamp-1">
+                        Cara Cepat Belajar React JS untuk pemula
+                      </h3>
+                      <p class="text-slate-600 mb-2 dark:text-slate-300 text-justify line-clamp-3"> <span
+                          class="pr-4 md:pr-6 lg:pr-8"></span>Sebelum mempelajari
+                        React, sangat penting untuk memahami
+                        JavaScript terlebih dahulu. Mengapa? Karena
+                        React adalah sebuah library yang dibangun untuk mempermudah kita dalam menggunakan JavaScript.
+                        Jika
+                        kita tidak memahami fundamental JavaScript dengan baik, maka akan sulit untuk mengembangkan
+                        website
+                        menggunakan React di masa depan.
+                        Untuk membantu Anda yang masih pemula dalam belajar JavaScript, saya memiliki blog yang membahas
+                        tips belajar JavaScript secara lengkap. Anda dapat mengaksesnya di.</p>
+
+                      <div class="flex gap-3 mt-2 items-center text-teal-500">
+                        <a href="../html/blogReact.html" class="text-teal-500 hover:text-teal-600">Baca selengkapnya</a>
+                        <a href="../html/blogReact.html">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Navigasi -->
+            <!-- <div class="swiper-button-next"></div>
+             <div class="swiper-button-prev"></div> -->
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Kontak -->
+    <section class="pt-20 lg:pt-24 pb-20 lg:pb-24" id="kontak">
+      <div class="container mx-auto">
+        <h2
+          class="font-bold bg-personal dark:bg-personal-hover bg-clip-text text-transparent text-3xl mb-4 text-center font-[popins]"
+          data-aos="fade-up" data-aos-duration="1000">Kontak</h2>
+        <p class="text-md md:text-lg lg:text-xl text-slate-600 font-semibold text-center pb-8 lg:pb-14 dark:text-slate-300 mx-4"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          Hubungi saya
+          jika ingin tanya
+          seputar pemrograman web, kuy tanya sekarang!</p>
+        <div class="gap-8 lg:gap-32 md:flex px-8 lg:px-0">
+          <!-- Info -->
+          <article class="text-center pb-12 w-full md:w-1/2 mx-auto dark:text-slate-300" data-aos="fade-right"
+            data-aos-duration="1000">
+            <!-- Faq -->
+            <div class=" mx-auto">
+              <h2 class="text-2xl font-semibold text-center mb-14 md:mb-16 font-[popins]">Frequently Asked Questions
+              </h2>
+              <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border-b border-gray-300 pb-4">
+                  <button
+                    class="w-full text-left text-lg font-semibold flex justify-between items-center focus:outline-none"
+                    id="faq1">
+                    <span>Pertanyaan Kalian Nanti</span>
+                    <svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor"
+                      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="faq1-icon">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </button>
+                  <div id="faq1-content"
+                    class="max-h-0 overflow-hidden mt-2 pl-4 transition-all duration-200 ease-in-out">
+                    <p>Masih kosong</p>
+                  </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="border-b border-gray-300 pb-4">
+                  <button
+                    class="w-full text-left text-lg font-semibold flex justify-between items-center focus:outline-none"
+                    id="faq2">
+                    <span>Pertanyaan Kalian Nanti</span>
+                    <svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor"
+                      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="faq2-icon">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </button>
+                  <div id="faq2-content"
+                    class="max-h-0 overflow-hidden mt-2 pl-4 transition-all duration-200 ease-in-out">
+                    <p>Masih kosong</p>
+                  </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="border-b border-gray-300 pb-4">
+                  <button
+                    class="w-full text-left text-lg font-semibold flex justify-between items-center focus:outline-none"
+                    id="faq3">
+                    <span>Pertanyaan Kalian Nanti</span>
+                    <svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor"
+                      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="faq3-icon">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </button>
+                  <div id="faq3-content"
+                    class="max-h-0 overflow-hidden mt-2 pl-4 transition-all duration-200 ease-in-out">
+                    <p>Masih Kosong.</p>
+                  </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="pb-4">
+                  <button
+                    class="w-full text-left text-lg font-semibold flex justify-between items-center focus:outline-none"
+                    id="faq4">
+                    <span>Pertanyaan Kalian Nanti</span>
+                    <svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor"
+                      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="faq4-icon">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </button>
+                  <div id="faq4-content"
+                    class="max-h-0 overflow-hidden mt-2 pl-4 transition-all duration-200 ease-in-out">
+                    <p>Masih kosong</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Form Isi -->
+          <fieldset
+            class="mx-auto w-full md:w-1/2 p-8 md:p-16 rounded-lg shadow-lg max-w-xl  bg-gray-100 dark:bg-slate-700 border border-purple-300 lg:h-[450px]"
+            data-aos="fade-left" data-aos-duration="1000">
+            <div class="mb-8 md:mb-10 flex items-center justify-center gap-2">
+              <h2 class="font-bold text-xl text-center dark:text-white font-[popins]">
+                Hubungi Saya
+              </h2>
+              <i class="fas fa-globe text-purple-500 text-lg md:text-xl lg:text-2xl"></i>
+            </div>
+            <h3 id="pop"></h3>
+            <form class="grid " action="https://formspree.io/f/xzzbvaar" method="POST">
+              <!-- Nama -->
+              <div class="mb-4 floating-label">
+                <input class="w-full px-3 py-2 text-black dark:text-white rounded bg-transparent border-b border-gray-500 dark:border-gray-300 focus:outline-none focus:border-black
+                    placeholder-transparent relative pr-10" id="username" placeholder="Enter Email" type="text"
+                  name="name" required />
+                <i
+                  class="fa-solid fa-user absolute top-4 md:top-3 right-3 text-base lg:text-xl text-slate-700 dark:text-slate-300"></i>
+                <label for="username" class="dark:text-white ">
+                  Nama Anda
+                </label>
+              </div>
+              <!-- Email -->
+              <div class="mb-4 floating-label">
+                <input class="w-full px-3 py-2 text-black dark:text-white rounded bg-transparent border-b border-gray-500 dark:border-gray-300 focus:outline-none focus:border-black
+                    placeholder-transparent relative pr-10" id="email" placeholder="Enter Email" type="email"
+                  name="email" required />
+                <i
+                  class="fa-solid fa-envelope absolute top-4 md:top-3 right-3 text-base lg:text-xl text-slate-700 dark:text-slate-300"></i>
+                <label for="email" class="dark:text-white ">
+                  Alamat Email
+                </label>
+              </div>
+              <!-- Pesan -->
+              <div class="md:mb-3 floating-label">
+                <input
+                  class="w-full px-3 py-2 text-black rounded dark:text-white bg-transparent border-b border-gray-500 dark:border-gray-300 focus:outline-none focus:border-black placeholder-transparent pr-10"
+                  id="pesan" placeholder="Enter Password" type="text" name="message" required />
+                <i
+                  class="fa-solid fa-comments absolute top-4 md:top-3 right-3 text-base lg:text-xl text-slate-700 dark:text-slate-300"></i>
+                <label for="pesan" class="dark:text-white">
+                  Pesan
+                </label>
+              </div>
+              <!-- Tombol Kirim -->
+              <button id="myButton"
+                class="text-lg font-semibold bg-personal py-2 rounded-lg text-white mt-10 hover:bg-personal-hover">
+                Kirim Pesan
+              </button>
+            </form>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+    <!-- Loading -->
+    <div id="loading-screen"
+      class="fixed inset-0 flex flex-col items-center justify-center bg-white dark:bg-gray-900 z-50 gap-10">
+      <div class="animate-spin rounded-full h-16 w-16 lg:h-20 lg:w-20  border-t-4 border-blue-500">
+      </div>
+      <div
+        class="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 animate-pulse font-[popins] dark:text-white">
+        Memuat...
+      </div>
+    </div>
+  </main>
+  <footer class="py-8 bg-slate-700 text-white lg:text-lg ">
+    <div class="container mx-auto px-4 lg:px-10 ">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-16 lg:gap-32 xl:gap-44 mx-auto">
+        <div class="px-4 lg:px-0">
+          <h3 class="font-bold mb-2">Profil</h3>
+          <div class="w-10 h-1 bg-pink-600 mb-4"></div>
+          <ul>
+            <li class="mb-2"><a href="#skill" class="hover:text-pink-500">Skill</a></li>
+            <li class="mb-2"><a href="#project" class="hover:text-pink-500">Project</a></li>
+            <li class="mb-2"><a href="#sertifikat" class="hover:text-pink-500">Sertifikat</a></li>
+            <li class="mb-2"><a href="#blog" class="hover:text-pink-500">Blog</a></li>
+          </ul>
+        </div>
+        <div class="px-4 lg:px-0">
+          <h3 class="font-bold mb-2">Bantuan</h3>
+          <div class="w-10 h-1 bg-pink-600 mb-4"></div>
+          <ul>
+            <li class="mb-2"><a href="#kontak" class="hover:text-pink-500">FAQ</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-pink-500">Hubungi Saya</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-pink-500">Kaloborasi</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-pink-500">Bikin Web Static</a></li>
+          </ul>
+        </div>
+        <div class="px-4 lg:px-0">
+          <h3 class="font-bold mb-2">Teknologi</h3>
+          <div class="w-10 h-1 bg-pink-600 mb-4"></div>
+          <ul>
+            <li class="mb-2"><a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer"
+                class="hover:text-pink-500">Tailwindcss</a></li>
+            <li class="mb-2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                rel="noopener noreferrer" class="hover:text-pink-500">JavaScript</a></li>
+            <li class="mb-2"><a href="https://swiperjs.com/" target="_blank" rel="noopener noreferrer"
+                class="hover:text-pink-500">Swiper Js</a></li>
+            <li class="mb-2"><a href="https://michalsnik.github.io/aos/" target="_blank" rel="noopener noreferrer"
+                class="hover:text-pink-500">AOS Animation</a></li>
+          </ul>
+        </div>
+        <div class="px-4 lg:px-0">
+          <h3 class="font-bold mb-2">Follow Saya</h3>
+          <div class="w-10 h-1 bg-pink-600 mb-4"></div>
+          <div class="flex gap-4 flex-wrap">
+            <a href="https://github.com/Rynnsza" target="_blank" rel="noopener noreferrer"
+              class="hover:text-pink-500"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/ahmdabri_" target="_blank" rel="noopener noreferrer"
+              class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ahmad-ambari-1b9bb8287" target="_blank" rel="noopener noreferrer"
+              class="hover:text-pink-500"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.tiktok.com/@ryndev_" target="_blank" rel="noopener noreferrer"
+              class="hover:text-pink-500"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@ahmadambari6962" target="_blank" rel="noopener noreferrer"
+              class="hover:text-pink-500"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 flex justify-center text-gray-300 text-sm lg:text-base">
+      <p>&copy; 2024 RyzZ. Built with ❤️ and TailwindCSS.</p>
+    </div>
+  </footer>
+  <!-- Js Personal -->
+  <script src="../js/personal.js"></script>
+  <!-- Ion Icon -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <!-- AOS Animation -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      },
+    });
+
+  </script>
+</body>
+
+</html>
